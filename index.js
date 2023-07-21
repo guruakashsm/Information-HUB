@@ -11,7 +11,7 @@
      console.log("landed");
      window.location.href = "search.html";
    } else {
-     alert("Please fill in both email and password.");
+     alert("Wrong password or email.");
    }
  });
  
