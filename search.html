@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="search.css">
+    <meta charset="utf-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="images\search.png" type="image/x-icon">
+    <title>Search</title>
+  </head>
+  <body style="background-color: #f1f1f1;">
+    <div class="SearchBox">
+      <h1>Search For Books </h1>
+      <input id="searchBar" placeholder="Type here"/>
+      <select id="filterYear">
+        <option value="">All Years</option>
+        <option value="1996">1996</option>
+        <option value="1997">1997</option>
+        <option value="1998">1998</option>
+        <option value="1999">1999</option>
+        <option value="2000">2000</option>
+      </select>
+      <select id="filterAuthor">
+        <option value="">All Authors</option>
+        <option value="J.K. Rowling">J.K. Rowling</option>
+        <option value="John G.Proakis and Dimitris G.Manolakis">John G.Proakis and Dimitris G.Manolakis</option>
+        <option value="Joshua Bloch">Joshua Bloch</option>
+      </select>
+      <select id="filterGenre">
+        <option value="">All Genres</option>
+        <option value="Harry Potter">Harry Potter</option>
+        <option value="Electronics">Electronics</option>
+        <option value="Maths & programming">Maths & Programming</option>
+        <option value="Novel">Novel</option>
+        <option value="Space">Space</option>
+      </select>
+    </div>
+     <div class="FlexContainer">
+    <div id="resultContainer" style="width:75%;overflow: scroll;height: 600px;border:2px solid crimson;">
+      <div id="root"></div>
+    </div>
+</div>
+    <script src="search.js"></script>
+    <footer>
+      <center>
+          <span class="team-member"><br>TEAM MEMBERS:</span><br>
+          <span class="team-member">SUJITHKUMAR.S - 201EC264</span><br>
+          <span class="team-member">GURUAKASH.S.M - 201EC152</span><br>
+          <span class="team-member">SANTHOSH.B - 201EC242</span>
+          <br><br>© Copyright 2023. Made by TECHNOWILD<br>
+      </center>
+  </footer>
+  </body>
+</html>
